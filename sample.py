@@ -41,7 +41,7 @@ with open('foods.txt', 'r') as infile:
 
                 data = ''
                 dataString = ''
-            if docCount == 100000:
+            if docCount == 100:
                 break
         else:
             continue
