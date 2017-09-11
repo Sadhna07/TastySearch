@@ -1,6 +1,24 @@
 import random
 
 
+# Read a input file foods.txt
+# read line by line in loop using enumeration which adds counter or index to iterator. [it works till the condition satisfies]
+    # check if index is greater or equals to 0, if yes, then:
+        # check if each line (string) is present in a file then
+            # add the data (strings) to variable String (dataString)
+            # check if string contains 'review/text' or 'review/summary', as these parameter are further used for calculating the scores.
+                # store these parameter value to a variable String(data)---keywords set.
+        # if no that is blank line(present after each review), then check the data string where all the keywords stored, and split it
+            # now loop around the data string values and store in set to make it unique( remove duplicate keyword ).
+            # Storing each keyword along with its index in the dictionary named keywords(key: keyword, value: index)
+            # store unique keywords data to list variable reviewVal  as per the indexand the input review data to list reviewStringsVal.
+        # checking the doccount to avoid delay the computation time while testing.
+
+
+# writing to a file named keywords.txt keywords along with a url:'http://127.0.0.1:5000/api?search_token='
+# reading the dictionary keywords containg index and key strings and writing to file along with url.
+
+
 # Sampling
 indexVal = 0
 reviewVal = []

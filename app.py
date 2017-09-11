@@ -6,6 +6,22 @@ from sample import *
 
 app = Flask(__name__)
 
+# Searching:
+# Taking the input from the url text box using request.args.get
+# now passing that to search api
+
+# In search API:::
+# Splitting the input parameter by comma and space and checking length of token is not equals to zero
+# check if token is present in keyword dictionary((key: keyword, value: index)) and set that value to keywordSearch list
+# check if keywordSearch length is quals to zero or not:
+	# zero, return empty string
+	# not zero, then check if matched keyword in reviewVal String
+		# calculate the score on match that is count / length for each index, that is for each review data.
+		# then sort the matched result
+		# now append the calculated score to the reviewStringsVal list, and return.
+
+
+
 def search(token):
 	try:
 		# print token
